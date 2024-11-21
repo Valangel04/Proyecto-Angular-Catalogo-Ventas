@@ -1,9 +1,7 @@
 import { Routes } from '@angular/router';
-import { InicioComponent } from './pages/inicio/inicio.component';
+import { InicioComponent } from './inicio/inicio.component';
 
-export const routes: Routes = [
-    {
-      path: '',
-      component: InicioComponent
-    }
-  ];
+export const appRoutes: Routes = [
+  { path: '', component: InicioComponent }, // Ruta raíz
+  { path: '**', redirectTo: '' } // Redirección para rutas no encontradas
+];

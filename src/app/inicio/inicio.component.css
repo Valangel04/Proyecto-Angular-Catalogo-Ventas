@@ -1,0 +1,23 @@
+#homesection h1 {
+    font-size: 32px;
+    color: rgb(221, 31, 31);
+    position: absolute;
+    top: 180px;
+    left: 250px;
+}
+#luchito {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+#winner-info {
+    text-align: center;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+#continue-btn {
+    position: absolute;
+    top: 600px;
+    left: 730px;
+}
