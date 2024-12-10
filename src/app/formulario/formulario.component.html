@@ -1,0 +1,18 @@
+<div class="form-container">
+  <h2>Formulario Liverpool FC</h2>
+  <form (ngSubmit)="submitForm()" #formularioForm="ngForm">
+    <label for="name">Tu Nombre:</label>
+    <input type="text" id="name" [(ngModel)]="name" name="name" required />
+
+    <label for="favoritePlayer">Jugador Favorito:</label>
+    <input type="text" id="favoritePlayer" [(ngModel)]="favoritePlayer" name="favoritePlayer" required />
+
+    <button type="submit" [disabled]="!formularioForm.form.valid">Enviar</button>
+  </form>
+
+  <div *ngIf="formSubmitted">
+    <h3>Gracias por participar!</h3>
+    <p>Nombre: {{ name }}</p>
+    <p>Jugador favorito: {{ favoritePlayer }}</p>
+  </div>
+</div>
